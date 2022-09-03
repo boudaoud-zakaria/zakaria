@@ -1,0 +1,182 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center ;
+    
+}
+body{
+    font-family: 'Noto Serif', serif;
+    background-image: url("https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.hello{
+    width: 360px;
+    margin: auto;
+    font-size: 30px;
+    color: #af9561;
+    
+}
+.main1{
+    width: 370px;
+    margin: auto;
+    background-color: hsl(60, 10%, 79%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #af9561 ;
+}
+.img1{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 10px solid #9ca9b3 ;
+    animation-name: anim-img;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    
+}
+.tht-img{
+    font-size: 30px;
+    color: #af9561;
+}
+.tht-img2{
+    color: rgb(127, 136, 143);
+}
+@keyframes anim-img{
+    0%{
+        transform: rotate(0turn);
+        border: 10px solid #af9561 ;
+
+    }100%{
+        transform: rotate(1turn);
+        border: 10px solid #9ca9b3 ;
+    }
+}
+p{
+    color:#af9561;
+    font-size: 40px;
+}
+.bouton{
+    width: 350px;
+    margin: auto;
+    /*background-image: linear-gradient(to right,hsl(60, 10%, 79%) 50% , #af9561);*/
+    background-color: hsl(60, 10%, 79%);
+    height: auto;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #af9561 ;
+}
+.eliment{
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 40px ;
+    
+}
+#zakizaki{
+    color:  rgb(127, 136, 143);
+    text-decoration: none;
+}
+.bouton:hover{
+    background-image: linear-gradient(to right,hsl(60, 10%, 79%) 50% , #af9561);
+}
+
+@media screen and (max-width :376px ){
+    .main1{
+        width: 330px;
+    }
+    .hello{
+        width: 330px;
+        font-size: 25px;
+    }
+    .img1{
+        width: 220px;
+        height: 220px;
+    }
+    p{
+        font-size: 33px;
+    }
+    .bouton{
+        width: 300px;
+        padding: 15px;
+        font-size: 25px;
+    }
+    .eliment{
+        gap: 30px ;
+    }
+}
+@media screen and (min-width :600px ) and (max-width : 980 px){
+    .main1{
+        width: 530px;
+    }
+    .hello{
+        width: 370px;
+        font-size: 30px;
+    }
+    .img1{
+        width: 280px;
+        height: 280px;
+    }
+    .tht-img{
+        font-size: 35px;
+    }
+    .tht-img2{
+        font-size: 23px;
+    }
+    p{
+        font-size: 50px;
+    }
+    .bouton{
+        width: 450px;
+        padding: 25px;
+        font-size: 36px;
+    }
+    .eliment{
+        gap: 25px ;
+    }
+}
+@media screen and (min-width :1200px ) {
+    .main1{
+        width: 1030px;
+    }
+    .hello{
+        width: 970px;
+        font-size: 40px;
+    }
+    .img1{
+        width: 300px;
+        height: 300px;
+    }
+    .tht-img{
+        font-size: 40px;
+    }
+    .tht-img2{
+        font-size: 28px;
+    }
+    p{
+        font-size: 55px;
+    }
+    .bouton{
+        width: 400;
+        padding: 25px;
+        font-size: 36px;
+    }
+    .eliment{
+        grid-template-columns: auto auto auto;
+        gap: 35px 0px;
+    }
+    .bouton:hover{
+        background-image: linear-gradient(to right,hsl(60, 10%, 79%) 50% , #af9561);
+    }
+    .body-min{
+        width: 1100px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
